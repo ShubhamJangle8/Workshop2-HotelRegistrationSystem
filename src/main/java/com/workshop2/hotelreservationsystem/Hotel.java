@@ -2,12 +2,13 @@ package com.workshop2.hotelreservationsystem;
 
 public class Hotel {
 	String hotelName;
-	int normalWeekDay;
+	int normalWeekDay, normalWeekEnd;
 
-	public Hotel(String hotelName, int regularWeekDay) {
+	public Hotel(String hotelName, int regularWeekDay, int regularWeekEnd) {
 		super();
 		this.hotelName = hotelName;
 		this.normalWeekDay = regularWeekDay;
+		this.normalWeekEnd = regularWeekEnd;
 	}
 
 	public String getHotelName() {
@@ -26,7 +27,16 @@ public class Hotel {
 		this.normalWeekDay = normalWeekDay;
 	}
 
+	public int getNormalWeekEnd() {
+		return normalWeekEnd;
+	}
+
+	public void setNormalWeekEnd(int normalWeekEnd) {
+		this.normalWeekEnd = normalWeekEnd;
+	}
+
 	public String toString() {
-		return "Hotel Name : " + hotelName + ", Normal Week day Rate : " + normalWeekDay;
+		return "Hotel Name : " + hotelName + ", Normal Week day Rate : " + normalWeekDay + ", Normal Week End Rate :"
+				+ normalWeekEnd;
 	}
 }

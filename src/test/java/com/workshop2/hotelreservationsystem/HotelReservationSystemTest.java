@@ -8,9 +8,9 @@ public class HotelReservationSystemTest {
 	@Test
 	public void GivenHotels_AddedToTheHotelReservationSystem() {
 		System.out.println("Welcome to the Hotel Registration system");
-		Hotel hotel1 = new Hotel("LakeWood", 110);
-		Hotel hotel2 = new Hotel("BridgeWood", 160);
-		Hotel hotel3 = new Hotel("BridgeWood", 220);
+		Hotel hotel1 = new Hotel("LakeWood", 110, 90);
+		Hotel hotel2 = new Hotel("BridgeWood", 160, 60);
+		Hotel hotel3 = new Hotel("BridgeWood", 220, 150);
 		HotelReservationSystem hotelSystem = new HotelReservationSystem();
 		hotelSystem.add(hotel1);
 		hotelSystem.add(hotel2);
